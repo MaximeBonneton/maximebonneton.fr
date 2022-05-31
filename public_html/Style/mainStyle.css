@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(Font/Roboto/Roboto-Black.ttf);
+}
+
+body
+{
+    background-color: #222222;
+    font-family: 'Roboto-Regular';
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+strong
+{
+    font-family: 'Roboto-Black';
+}
+
+.smallText
+{
+    color: #ffd700;
+    font-size: 0.9em;
+}
+
+.aim
+{
+    color: #b128c4;
+}
+
+h1
+{
+    color: #ffd700;
+    font-family: 'Roboto-Black';
+    font-size: 110px;
+    padding: 0;
+    margin: 0;
+}
+
+h2
+{
+    color: #ffd700;
+    font-family: 'Roboto-Black';
+    font-size: 45px;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+h3{
+    font-family: 'Roboto-Black';
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#bloc_page
+{
+    display: grid;
+    grid-template-columns: 200px 1fr ;
+}
+
+#lang
+{
+    position: fixed;
+    right: 10px;
+    top: 10px
+}
+
+#lang a
+{
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 20px;
+}
+
+/* ---------------------   Home --------------------------- */
+
+#home
+{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 30px 300px 1fr 30px;
+    grid-template-columns: 10% 1fr 10% 1fr 10%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.img_bckgrnd
+{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.deco
+{
+    background-color: #424141;
+    width: 70%;
+    height: 5px;
+}
+
+.home_txt
+{
+    grid-row: 3;
+    grid-column: 2;
+}

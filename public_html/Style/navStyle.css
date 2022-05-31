@@ -1,0 +1,79 @@
+hearder
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px #707070 solid;
+    height: 100%;
+    width: 200px;
+}
+
+#logo
+{
+    margin-top: 10px;
+}
+
+#logo img
+{
+    width: 100%;
+}
+
+nav
+{
+    border-top: 1px #707070 solid;
+    padding: 0%;
+    margin-top: 100%;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li
+{
+    border-bottom: 1px #707070 solid;
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav a
+{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    color: #707070;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin: 0;
+    width: 100%;
+}
+
+nav a:hover
+{
+    color: #ffd700;
+    border-top: 1px #ffd700 solid;
+    border-bottom: 1px #ffd700 solid;
+}
+
+#network
+{
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#network a
+{
+    text-decoration: none;
+    color: #ffd700;
+    padding: 0;
+    margin: 0;
+    font-size:20px;
+}
