@@ -130,7 +130,7 @@
                             en fin d'école d'ingénieur puis en m'intéressant de près à ce sujet
                             lors de mon activité d'ingénieur d'affaires. Mon parcours professionnel m'a donné 
                             l'occasion de piloter un projet de mise en conformité à la <span class="smallText">LPM
-                            (Loi de Programmation Militaire)</span> dans une grande entreprise française.
+                            (Loi de Programmation Militaire)</span> dans une grande entreprise française. <br><br>
                             
                             Aujourd'hui, je me forme continuellement au <span class="smallText">Ethical Hacking</span> et à la cybersécurité 
                             grâce aux sites TryHackMe et RootMe.

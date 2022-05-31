@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../../Style/navStyle.css"/>
         <link rel="stylesheet" href="../../Style/devStyle.css"/>
         <link rel="stylesheet" href="../../Style/Font/Awesome/css/all.css"/>
-        <title>My Site Web</title>
+        <title>My Website</title>
     </head>
     
     <body>

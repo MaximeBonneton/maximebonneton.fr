@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../../Style/navStyle.css"/>
         <link rel="stylesheet" href="../../Style/skillsStyle.css"/>
         <link rel="stylesheet" href="../../Style/Font/Awesome/css/all.css"/>
-        <title>My Site Web</title>
+        <title>My Website</title>
     </head>
     
     <body>
@@ -28,7 +28,7 @@
                                 <div class="progress c"></div>
                             </div>
                             <ul>
-                                <li>Advanced course in engineering school</li>
+                                <li>Advanced courses in engineering school</li>
                                 <li>Graduation project</li>
                             </ul>
                         </div>
@@ -52,8 +52,8 @@
                             </div>
                             <ul>
                                 <li>Basics in engineering school</li>
-                                <li>Self-taught supplement</li>
-                                <li>Creation of the website</li>
+                                <li>Self-taught advanced knowledge </li>
+                                <li>Creation of this website</li>
                             </ul>
                         </div>
                         <div class="dev_skill">
@@ -64,8 +64,8 @@
                                 <div class="java progress"></div>
                             </div>
                             <ul>
-                                <li>Self-taught basics</li>
-                                <li>Creation of the website</li>
+                                <li>Self-taught advanced knowledge</li>
+                                <li>Creation of this website</li>
                             </ul>
                         </div>
                         <div class="dev_skill">
@@ -77,7 +77,7 @@
                             </div>
                             <ul>
                                 <li>Self-taught basics</li>
-                                <li>Creation of the website</li>
+                                <li>Creation of this website</li>
                             </ul>
                         </div>
                         <div class="dev_skill">
@@ -109,65 +109,65 @@
                     <div>
                         <h3>IP infrastructure</h3>
                         <p>
-                            My engineering school provided me with solid technical foundations concerning
-                            <span class="smallText">networks</span> and <span class="smallText">telecommunications</span>. I was able to develop and put into practice
-                            this knowledge through my mission as a business engineer.
+                            My engineering school allowed me to learn solid technical basics concerning
+                            <span class="smallText">networks</span> and <span class="smallText">telecommunications</span>.
+                            I later developed and applied this knowledge through my mission as a pre-sales engineer.
                         </p>
                     </div>
                     <div>
                         <h3>Safety & Physical Security</h3>
                         <p>
-                            My activity as a business engineer led me to specialize
-                            in physical safety and security systems. I learned during
-                            several years of designing systems for <span class="smallText">access control</span>,
-                            <span class="smallText">intrusion detection</span> and <span class="smallText">video surveillance</span>.
+                            As a pre-sales engineer, I specialized in physical safety and security systems.
+                            For several years, I designed <span class="smallText">access control</span> architectures,
+                            <span class="smallText">intrusion detection </span> infrastructures and
+                            <span class="smallText">surveillance</span> systems.
                         </p>
                     </div>
                     <div>
                         <h3>Cybersecurity</h3>
                         <p>
-                            I started my introduction to cybersecurity by studying <span class="smallText">cryptography</span>
-                            at the end of engineering school then by taking a close interest in this subject
-                            during my activity as a business engineer. My career path has given me
-                            the opportunity to lead a <span class="smallText">LPM compliance project
-                            (Military Programming Law)</span> in a large French company.
+                            I started learning cybersecurity with <span class="smallText"> the cryptography</span>
+                            at the end of the engineering school. Then, I focused on this subject
+                            while I was a pre-sales engineer. My professional career has given me
+                            the opportunity to lead a <span class="smallText">LPM (French Military Programming Law)</span>
+                            compliance project for one of the biggest french companies. <br><br>
                             
-                            Today, I continuously train in <span class="smallText">Ethical Hacking</span> and cybersecurity
-                            thanks to the sites TryHackMe and RootMe.
+                            At the moment, I am still training myself at <span class="smallText">Ethical Hacking</span> and cybersecurity
+                            thanks to the websites TryHackMe and RootMe.
                         </p>
                     </div>
                     <div>
                         <h3>Embedded systems</h3>
                         <p>
-                            I come from an engineering background specializing in embedded systems.
-                            My graduation project was to prototype a <span class="smallText">authentication wristband</span>
+                            I got an engineering background specialized in embedded systems.
+                            My graduation project was to prototype an <span class="smallText">authentication wristband</span>
                             on a Raspberry PI.
                         </p>
                     </div>
                 </article>
                 <article id="commerce">
-                    <h2>Trade</h2>
+                    <h2>Business</h2>
                     <p>
-                        In the profession of business engineer, there is also... business!
-                        <br> On the commercial side, my missions were therefore diverse and varied:
+                        Being a pre-sales engineer means also... being a business man!
+                        <br> My missions were therefore diverse and varied:
                     </p>
                     <ul>
-                        <li>Prospecting</li>
+                        <li>Commercial prospection</li>
                         <li>Commercial strategy</li>
                         <li>Negotiation</li>
                         <li>Customer relations</li>
                     </ul>
-                        </article>
+                </article>
                 <article id="management">
                     <h2>Management</h2>
                     <p>
-                        Getting projects is good. Carrying them out is better!
+                        Obtaining new projects is good. Carrying them out is better!
                     </p>
                     <ul>
-                        <li>Project management</li>
-                        <li>Technical team management</li>
+                        <li>Projects management</li>
+                        <li>Management of the technical teams</li>
                         <li>Quality and safety monitoring</li>
-                        <li>Contract Management</li>
+                        <li>Contracts management</li>
                     </ul>
                 </article>
             </section>
