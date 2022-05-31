@@ -6,7 +6,7 @@
         <ul>
             <li><a href="home.php">Home</a></li>        
             <li><a href="aboutMe.php">About Max</a></li>
-            <li><a href="skills.php">My Skills</a></li>
+            <li><a href="skills.php">Skills</a></li>
             <li><a href="project.php">Projects</a></li>           
         </ul>
     </nav>

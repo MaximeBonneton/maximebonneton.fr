@@ -23,12 +23,12 @@
                 <article class="home_txt">
                     <h1> Welcome</h1>
                     <p>
-                        You have arrived on my boat, I am Max, I will be your guide
-                        for exploring the depths of the site.
+                        Welcome on board, I am Max, I will be your guide
+                        during the exploration of the depths of this website.
                     </p>
                     <p>
-                        In a few words <span class="smallText">and lines of code,</span> you will discover the essence of my profile,
-                        of my skills and my project.
+                        With a few words <span class="smallText">and lines of code,</span> you will discover a lot about me,
+                        my skills and my projects.
                     </p>
                     <p>
                         Feel free to navigate through the tabs on your left. <br> I wish you a pleasant visit.
