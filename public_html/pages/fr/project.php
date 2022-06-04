@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../../Style/mainStyle.css"/>
-        <link rel="stylesheet" href="../../Style/navStyle.css"/>
-        <link rel="stylesheet" href="../../Style/Font/Awesome/css/all.css"/>
+        <link rel="stylesheet" href="../../css/mainStyle.css"/>
+        <link rel="stylesheet" href="../../css/navStyle.css"/>
+        <link rel="stylesheet" href="../../css/Font/Awesome/css/all.css"/>
         <title>My Site Web</title>
     </head>
     

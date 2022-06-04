@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../../Style/mainStyle.css"/>
-        <link rel="stylesheet" href="../../Style/navStyle.css"/>
-        <link rel="stylesheet" href="../../Style/aboutMeStyle.css"/>
-        <link rel="stylesheet" href="../../Style/Font/Awesome/css/all.css"/>
+        <link rel="stylesheet" href="../../css/mainStyle.css"/>
+        <link rel="stylesheet" href="../../css/navStyle.css"/>
+        <link rel="stylesheet" href="../../css/aboutMeStyle.css"/>
+        <link rel="stylesheet" href="../../css/Font/Awesome/css/all.css"/>
         <title>My Website</title>
     </head>
     
@@ -14,8 +14,8 @@
             <?php include('nav.php'); ?>  <!-- link to the hearder html code-->
             <section id="aboutMe">
                 <div id="lang">
-                    <a href="../Fr/aboutMe.php">FR</a> |
-                    <a href="../En/aboutMe.php"><strong>EN</strong></a>
+                    <a href="../fr/aboutMe.php">FR</a> |
+                    <a href="../en/aboutMe.php"><strong>EN</strong></a>
                 </div>
                 <article class="article_n1">
                     <h2>About Max</h2>

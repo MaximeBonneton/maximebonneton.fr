@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../../Style/mainStyle.css"/>
-        <link rel="stylesheet" href="../../Style/navStyle.css"/>
-        <link rel="stylesheet" href="../../Style/skillsStyle.css"/>
-        <link rel="stylesheet" href="../../Style/Font/Awesome/css/all.css"/>
+        <link rel="stylesheet" href="../../css/mainStyle.css"/>
+        <link rel="stylesheet" href="../../css/navStyle.css"/>
+        <link rel="stylesheet" href="../../css/skillsStyle.css"/>
+        <link rel="stylesheet" href="../../css/Font/Awesome/css/all.css"/>
         <title>My Website</title>
     </head>
     
@@ -14,8 +14,8 @@
             <?php include('nav.php'); ?>  <!-- link to the hearder html code-->
             <section id="skills">
                 <div id="lang">
-                    <a href="../Fr/skills.php">FR</a> |
-                    <a href="../En/skills.php"><strong>EN</strong></a>
+                    <a href="../fr/skills.php">FR</a> |
+                    <a href="../en/skills.php"><strong>EN</strong></a>
                 </div>
                 <article id="dev">
                     <h2>Programming languages</h2>
@@ -82,10 +82,10 @@
                         </div>
                         <div class="dev_skill">
                             <i class="fa-solid fa-memory"></i>
-                            <span>X86 ASSEMBLER</span>
+                            <span>ASSEMBLER X86</span>
                             <p>20%</p>
                             <div class="bar">
-                                <div class="assembly progress"></div>
+                                <div class="progress assembleur"></div>
                             </div>
                             <ul>
                                 <li>Basics in engineering school</li>

@@ -1,13 +1,13 @@
 <hearder>
     <div id="logo">
-        <img src="../../Image/logo_exemple.png" alt="logo"/>
+        <img src="../../img/logo_exemple.png" alt="logo"/>
     </div>
     <nav>
         <ul>
-            <li><a href="home.php">Accueil</a></li>        
-            <li><a href="aboutMe.php">A propos de Max</a></li>
-            <li><a href="skills.php">Mes compétences</a></li>
-            <li><a href="project.php">Projets</a></li>           
+            <li><a href="home.php">Home</a></li>        
+            <li><a href="aboutMe.php">About Max</a></li>
+            <li><a href="skills.php">Skills</a></li>
+            <li><a href="project.php">Projects</a></li>           
         </ul>
     </nav>
     <div id=network>

@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../../Style/mainStyle.css"/>
-        <link rel="stylesheet" href="../../Style/navStyle.css"/>
-        <link rel="stylesheet" href="../../Style/skillsStyle.css"/>
-        <link rel="stylesheet" href="../../Style/Font/Awesome/css/all.css"/>
+        <link rel="stylesheet" href="../../css/mainStyle.css"/>
+        <link rel="stylesheet" href="../../css/navStyle.css"/>
+        <link rel="stylesheet" href="../../css/skillsStyle.css"/>
+        <link rel="stylesheet" href="../../css/Font/Awesome/css/all.css"/>
         <title>My Site Web</title>
     </head>
     
@@ -14,8 +14,8 @@
             <?php include('nav.php'); ?>  <!-- link to the hearder html code-->
             <section id="skills">
                 <div id="lang">
-                    <a href="../Fr/skills.php"><strong>FR</strong></a> |
-                    <a href="../En/skills.php">EN</a>
+                    <a href="../fr/skills.php"><strong>FR</strong></a> |
+                    <a href="../en/skills.php">EN</a>
                 </div>
                 <article id="dev">
                     <h2>Langages de programmation</h2>

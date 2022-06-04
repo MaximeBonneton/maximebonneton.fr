@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../../Style/mainStyle.css"/>
-        <link rel="stylesheet" href="../../Style/navStyle.css"/>
-        <link rel="stylesheet" href="../../Style/devStyle.css"/>
-        <link rel="stylesheet" href="../../Style/Font/Awesome/css/all.css"/>
+        <link rel="stylesheet" href="../../css/mainStyle.css"/>
+        <link rel="stylesheet" href="../../css/navStyle.css"/>
+        <link rel="stylesheet" href="../../css/devStyle.css"/>
+        <link rel="stylesheet" href="../../css/Font/Awesome/css/all.css"/>
         <title>Mon Site Web</title>
     </head>
     
@@ -14,8 +14,8 @@
             <?php include('nav.php'); ?>  <!-- link to the hearder html code-->
             <section id="home">
                 <div id="lang">
-                    <a href="../Fr/home.php"><strong>FR</strong></a> |
-                    <a href="../En/home.php">EN</a>
+                    <a href="../fr/home.php"><strong>FR</strong></a> |
+                    <a href="../en/home.php">EN</a>
                 </div>
                 <div class="img_bckgrnd">
                     <div class="deco"></div>
