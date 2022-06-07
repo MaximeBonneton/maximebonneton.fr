@@ -1,6 +1,9 @@
 const box = document.querySelector("#box");
-const xstart = 900;
+const widthBox = document.body.clientWidth
+const xstart = widthBox/2+100;
 const ystart = 500;
+var virusLength = 1;
+//console.log(document.body.clientHeight);
 
 // Define class
 
@@ -9,6 +12,7 @@ class cell {
         this.px = px;
         this.py = py;
         this.mainCell = mainCell;
+        this.pxCell = document.createElement("div");
     }
 
     deleteCell()
@@ -18,12 +22,17 @@ class cell {
 
     showCell()
     {
-        let pxCell = document.createElement("div");
-        pxCell.classList.add("cell");
-        pxCell.style.left = xstart+6*this.px + "px";
-        pxCell.style.top = ystart+6*this.py + "px";
-        box.appendChild(pxCell);
+        this.pxCell.classList.add("cell");
+        this.pxCell.style.left = xstart+6*this.px + "px";
+        this.pxCell.style.top = ystart+6*this.py + "px";
+        box.appendChild(this.pxCell);
     }
+
+    redCell()
+    {
+        this.pxCell.style.backgroundColor = "rgb(189, 26, 26)";
+    }
+
 }
 
 class virus {
@@ -31,6 +40,8 @@ class virus {
     constructor(mainCell){ 
         this.mainCell = mainCell;
         this.coreVirus = [mainCell];
+        this.borderVirus = [mainCell];
+        this.stuckVirus = [];
     }
 
     cellGrowth(activeCell)
@@ -40,7 +51,6 @@ class virus {
         let right = 0;
         let top = 0;
         let bot = 0;
-
         // We're checking the neighbour
         for(let i=0; i < this.coreVirus.length; i++){
             if((this.coreVirus[i].px == activeCell.px) && (this.coreVirus[i].py == (activeCell.py+1))){
@@ -61,9 +71,15 @@ class virus {
             }
         }
         let freeCell = 4-left-right-top-bot;
-        if(freeCell == 4)
+        if(freeCell == 0)
         {
-            //console.log("No neighbour");
+            let pos = this.borderVirus.indexOf(activeCell);
+            activeCell.redCell();
+            let stuckCell = this.borderVirus.splice(pos,1);
+            this.stuckVirus.push(stuckCell);
+            virusLength--;
+
+            //console.log("No neighbour",activeCell.py,activeCell.px);
         }
         // If we have neighbour, we process to the growth on a ramdom adjacent box
         if (freeCell != 0)
@@ -77,11 +93,13 @@ class virus {
                         let newCell = new cell(activeCell.px-1,activeCell.py,this.mainCell);
                         newCell.showCell();
                         this.coreVirus.push(newCell);
+                        this.borderVirus.push(newCell);
                         if(freeCell==3) //Boost the solo cell
                         {
                             let newCell = new cell(activeCell.px-2,activeCell.py,this.mainCell);
                             newCell.showCell();
                             this.coreVirus.push(newCell);
+                            this.borderVirus.push(newCell);
                         }
                         //console.log("Creation cell on the left");
                         return 1;
@@ -92,11 +110,13 @@ class virus {
                         let newCell = new cell(activeCell.px+1,activeCell.py,this.mainCell);
                         newCell.showCell();
                         this.coreVirus.push(newCell);
+                        this.borderVirus.push(newCell);
                         if(freeCell==3) //Boost the solo cell
                         {
                             let newCell = new cell(activeCell.px+2,activeCell.py,this.mainCell);
                             newCell.showCell();
                             this.coreVirus.push(newCell);
+                            this.borderVirus.push(newCell);
                         }
                         //console.log("Creation cell on the right");
                         return 1;
@@ -107,11 +127,13 @@ class virus {
                         let newCell = new cell(activeCell.px,activeCell.py-1,this.mainCell);
                         newCell.showCell();
                         this.coreVirus.push(newCell);
+                        this.borderVirus.push(newCell);
                         if(freeCell==3) //Boost the solo cell
                         {
                             let newCell = new cell(activeCell.px,activeCell.py-2,this.mainCell);
                             newCell.showCell();
                             this.coreVirus.push(newCell);
+                            this.borderVirus.push(newCell);
                         }
                         //console.log("Creation cell on the top");
                         return 1;
@@ -122,11 +144,13 @@ class virus {
                         let newCell = new cell(activeCell.px,activeCell.py+1,this.mainCell);
                         newCell.showCell();
                         this.coreVirus.push(newCell);
+                        this.borderVirus.push(newCell);
                         if(freeCell==3) //Boost the solo cell
                         {
                             let newCell = new cell(activeCell.px,activeCell.py+2,this.mainCell);
                             newCell.showCell();
                             this.coreVirus.push(newCell);
+                            this.borderVirus.push(newCell);
                         }
                         //console.log("Creation cell on the bottom")
                         return 1;
@@ -151,7 +175,7 @@ class virus {
             //Coming Soon
             /*let pos = this.coreVirus.indexOf(activeCell);
             console.log(pos);
-            let deletedCell = this.coreVirus.splice(pos,1)
+            let deletedCell = this.coreVirus.splice(pos,1);
             console.log("Decay");
             console.log(deletedCell[0]);*/
         }
@@ -171,9 +195,17 @@ class virus {
 
     spreadVirus(speed)
     {
-        let currentLenght = this.coreVirus.length;
-        for(let i=0; i < currentLenght; i++){
-            this.cellDev(this.coreVirus[i]);
+        virusLength = this.borderVirus.length;
+        for(let i=0; i < virusLength; i++){
+            if(6*this.borderVirus[i].py<-490 || 6*this.borderVirus[i].py> 440 || 6*this.borderVirus[i].px>(widthBox/2-10))
+            {
+                let pos = this.borderVirus.indexOf(this.borderVirus[i]);
+                this.borderVirus[i].redCell();
+                let stuckCell = this.borderVirus.splice(pos,1);
+                this.stuckVirus.push(stuckCell);
+                virusLength--;
+            }
+            this.cellDev(this.borderVirus[i]);
         }
         speed=speed-(Math.exp(speed/100)/80+2); // Equation to try to stabilize the speed
         //console.log(speed);
@@ -189,6 +221,9 @@ c1.showCell();
 v1 = new virus(c1);
 let initSpeed = 1000;
 v1.spreadVirus(initSpeed);
+
+
+
 
 //Other possibility
 //setInterval(function (){v1.spreadVirus();},10);
