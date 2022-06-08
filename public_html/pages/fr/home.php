@@ -4,7 +4,6 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="../../css/mainStyle.css"/>
         <link rel="stylesheet" href="../../css/navStyle.css"/>
-        <link rel="stylesheet" href="../../css/devStyle.css"/>
         <link rel="stylesheet" href="../../css/Font/Awesome/css/all.css"/>
         <title>Mon Site Web</title>
     </head>
