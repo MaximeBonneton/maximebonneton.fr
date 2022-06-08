@@ -1,10 +1,107 @@
-#skills
-{
+@media screen and (min-width: 992px) {
+
+    #skills
+    {
     grid-column: 2;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     row-gap: 50px;
+    }
+
+    .dev_skill i
+    {
+        grid-row: 1 / 3;
+        font-size: 80px;
+        align-self: center;
+        justify-self: center;
+        /*color :#ffd700;*/
+    }
+
+    .dev_skill span 
+    {
+        grid-column: 2 / 4;
+        color: #ffd700;
+        font-family: 'Roboto-Black';
+        font-size: 20px;
+        height: 1em;
+        align-self: flex-end;
+        overflow: hidden;
+    }
+
+    .dev_skill p
+    {
+        grid-column: 4;
+        color: #ffd700;
+        font-family: 'Roboto-Black';
+        font-size: 20px;
+        height: 1em;
+        align-self: flex-end;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dev_skill ul
+    {
+        grid-column: 1 / 5;
+        margin: 0.5em;
+        list-style-type: square;
+        font-size: 20px;
+    }
+
 }
+
+@media screen and (max-width: 991px) {
+
+    #skills
+    {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    row-gap: 50px;
+    }
+
+    .dev_skill i
+    {
+        grid-row: 1 / 3;
+        font-size: 80px;
+        align-self: center;
+        justify-self: center;
+        /*color :#ffd700;*/
+    }
+
+    .dev_skill span 
+    {
+        grid-column: 2 / 4;
+        color: #ffd700;
+        font-family: 'Roboto-Black';
+        font-size: 30px;
+        height: 1em;
+        align-self: flex-end;
+        overflow: hidden;
+    }
+
+    .dev_skill p
+    {
+        grid-column: 4;
+        color: #ffd700;
+        font-family: 'Roboto-Black';
+        font-size: 30px;
+        height: 1em;
+        align-self: flex-end;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dev_skill ul
+    {
+        grid-column: 1 / 5;
+        margin: 0.5em;
+        list-style-type: square;
+        font-size: 30px;
+    }
+    
+}
+
 
 #dev
 {
@@ -51,45 +148,7 @@
     grid-template-columns: 120px 1fr 1fr 10%;
 }
 
-.dev_skill i
-{
-    grid-row: 1 / 3;
-    font-size: 80px;
-    align-self: center;
-    justify-self: center;
-    /*color :#ffd700;*/
-}
 
-.dev_skill span 
-{
-    grid-column: 2 / 4;
-    color: #ffd700;
-    font-family: 'Roboto-Black';
-    font-size: 20px;
-    height: 1em;
-    align-self: flex-end;
-    overflow: hidden;
-}
-
-.dev_skill p
-{
-    grid-column: 4;
-    color: #ffd700;
-    font-family: 'Roboto-Black';
-    font-size: 20px;
-    height: 1em;
-    align-self: flex-end;
-    padding: 0;
-    margin: 0;
-}
-
-.dev_skill ul
-{
-    grid-column: 1 / 5;
-    margin: 0.5em;
-    list-style-type: square;
-    font-size: 20px;
-}
 
 /*--------------------------------------- Les bars ------------------------------------------*/
 
@@ -151,11 +210,22 @@
     max-width: 800px;
 }
 
+@media screen and (min-width: 992px) {
 #tech p
 {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+}
+
+@media screen and (max-width: 991px) {
+    #tech p
+    {
+        font-size: 40px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 #tech h2

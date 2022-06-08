@@ -8,6 +8,11 @@
     src: url(Font/Roboto/Roboto-Black.ttf);
 }
 
+html, body {
+    min-height: 100%;
+    min-width: 100vw;
+}
+
 strong
 {
     font-family: 'Roboto-Black';
@@ -130,7 +135,6 @@ body
     font-size: 40px;
     margin: 0;
     padding: 0;
-
 }
 
 h1
