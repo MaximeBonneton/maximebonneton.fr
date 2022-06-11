@@ -1,4 +1,8 @@
 CSS :
 Add font after the Roboto to the security (if a brower doesn't have the font)
+Changement au niveau des skills pour plus de lisibilité en screen smarthphone
+Ajouter image au topic dans la page projet
 
 
+Project Idea :
+- recueil de recit

@@ -20,10 +20,12 @@
                 <h2>My projects</h2>
                 <article id="listProject">
                     <a class="topic" href="home.php">
+                        <img src="../../img/logo_exemple.png" alt="logo"/>
                         <span class="titleTopic">MyWebsite</span>
                         <p></p>
                     </a>
                     <a class="topic" href="vSpread.php">
+                        <img src="../../img/vSpread.png" alt="logo"/>
                         <span class="titleTopic">VSpread</span>
                         <p></p>
                     </a>

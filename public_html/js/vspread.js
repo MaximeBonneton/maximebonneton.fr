@@ -1,5 +1,5 @@
 const box = document.querySelector("#box");
-const widthBox = document.body.clientWidth
+const widthBox = document.body.clientWidth;
 const xstart = widthBox/2+100;
 const ystart = 500;
 var virusLength = 1;
@@ -197,7 +197,10 @@ class virus {
     {
         virusLength = this.borderVirus.length;
         for(let i=0; i < virusLength; i++){
-            if(6*this.borderVirus[i].py<-490 || 6*this.borderVirus[i].py> 440 || 6*this.borderVirus[i].px>(widthBox/2-10))
+            if(6*this.borderVirus[i].py<-490 || 
+            6*this.borderVirus[i].py> 440 ||
+            6*this.borderVirus[i].px>(widthBox/2-120) ||
+            6*this.borderVirus[i].px<(-widthBox/2+100))
             {
                 let pos = this.borderVirus.indexOf(this.borderVirus[i]);
                 this.borderVirus[i].redCell();
