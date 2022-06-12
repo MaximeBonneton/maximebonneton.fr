@@ -1,15 +1,16 @@
 <?php
   
-   $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-  
-   If($lang!="fr")
-   {
-        $lang= "en";
-   }
+$LANG = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
-   // Redirect browser 
-   header("Location: pages/" . $lang . "/home.php");  
-  
-   exit;
-  
-?>
+switch($LANG){
+ 	case "en":
+		require('lang/eng.php');		
+	break;
+	case "fr":
+		require('lang/fre.php');		
+	break;	
+	default: 
+		require('lang/eng.php');		
+	}
+
+require("../templates/home.php");

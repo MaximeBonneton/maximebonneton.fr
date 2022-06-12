@@ -1,7 +1,7 @@
 <hearder>
     <div id="hearder">
         <div id="logo">
-            <img src="../../img/logo_exemple.png" alt="logo"/>
+            <img src="img/logo_exemple.png" alt="logo"/>
         </div>
         <div href="javascript:void(0);" class="icon" onclick="myFunction()" >
             <i id="button" class="fa-solid fa-bars"></i>
