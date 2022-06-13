@@ -1,5 +1,3 @@
-<?php $title = "Maxime Bonneton"; ?>
-
 <?php ob_start(); ?>
 <section id="home">
     <div id="lang">
@@ -21,6 +19,5 @@
         </p>
     </article>
 </section>
-<?php $content = ob_get_clean(); ?>
+<?php $home = ob_get_clean(); ?>
 
-<?php require("layout.php") ?>
