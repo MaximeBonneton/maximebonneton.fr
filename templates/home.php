@@ -13,7 +13,7 @@
             <?= $lang["home"]["text2"] ?>
         </p>
         <p>
-            <?= $lang["home"]["text2"] ?>
+            <?= $lang["home"]["text3"] ?>
         </p>
     </article>
 </section>

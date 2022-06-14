@@ -1,10 +1,18 @@
 <?php
 // Select the good language
-$LANG = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+if (empty($_GET['lang'])){
+   $LANG = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+}
+else if ($_GET['lang']=="fr") {
+   $LANG = "fr";
+}
+else if ($_GET['lang']=="en") {
+   $LANG = "en";
+}
 
 switch($LANG){
  	case "en":
-		require('lang/eng.php');		
+		require('lang/eng.php');	
 	break;
 	case "fr":
 		require('lang/fre.php');		
@@ -43,7 +51,7 @@ switch($LANG){
    {
          // Iterate through a given list of routes.
          foreach ($routes as $path => [$content,$stylePage]) {
-            if ($path == $_SERVER['REQUEST_URI']) {
+            if ($path == parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH)) {
                // If the path matches, display its contents and stop the router.
                return [$content,$stylePage];
             }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="/maximebonneton.fr/public_html/css/mainStyle.css"/>
@@ -12,7 +12,8 @@
     <body>
         <div id="bloc_page">
             <div id="lang">
-                <?php echo $lang["home"]["lang"] ?>
+                <a href="?lang=fr"><?=$lang["layout"]["langFR"] ?></a> |
+                <a href="?lang=en"><?=$lang["layout"]["langEN"] ?></a>
             </div>
                 <?= $header; ?>
                 <?= $content; ?>

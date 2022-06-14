@@ -1,11 +1,11 @@
 <?php $projectStyle = "projectStyle.css"?>
 <?php ob_start(); ?>
 <section id="project">
-    <h2>My projects</h2>
+    <h2><?=$lang["projects"]["title1"]?></h2>
     <article id="listProject">
         <a class="topic" href="home">
             <img src="public_html/img/logo_exemple.png" alt="logo"/>
-            <span class="titleTopic">MyWebsite</span>
+            <span class="titleTopic">My Website</span>
             <p></p>
         </a>
         <a class="topic" href="project/vSpread">
@@ -15,15 +15,15 @@
         </a>
         <a class="topic">
             <span class="titleTopic">HackProgress</span>
-            <p>Coming soon</p>
+            <p><?=$lang["projects"]["coming"]?></p>
         </a>
         <a class="topic">
             <span class="titleTopic">ZombDetector</span>
-            <p>Coming soon</p>
+            <p><?=$lang["projects"]["coming"]?></p>
         </a>
         <a class="topic">
             <span class="titleTopic">WhiteWolf</span>
-            <p>Coming soon</p>
+            <p><?=$lang["projects"]["coming"]?></p>
         </a>
     </article>
 </section>

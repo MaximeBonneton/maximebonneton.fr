@@ -2,7 +2,7 @@
 <?php ob_start(); ?>
 <section id="skills">
     <article id="dev">
-        <h2> <?= $lang["skills"]["title1"]?> </h2>
+        <h2> <?=$lang["skills"]["title1"]?> </h2>
         <div class="dev_skills_list">
             <div class="dev_skill">
                 <i class="fa-solid fa-c"></i>
@@ -12,7 +12,7 @@
                     <div class="progress c"></div>
                 </div>
                 <ul>
-
+                    <?=$lang["skills"]["listC"]?>
                 </ul>
             </div>
             <div class="dev_skill">
@@ -23,7 +23,7 @@
                     <div class="net progress"></div>
                 </div>
                 <ul>
-
+                    <?=$lang["skills"]["listNET"]?>
                 </ul>
             </div>
             <div class="dev_skill">
@@ -34,9 +34,7 @@
                     <div class="progress html"></div>
                 </div>
                 <ul>
-                    <li>Basics in engineering school</li>
-                    <li>Self-taught advanced knowledge </li>
-                    <li>Creation of this website</li>
+                    <?=$lang["skills"]["listHTML"]?>
                 </ul>
             </div>
             <div class="dev_skill">
@@ -47,8 +45,7 @@
                     <div class="java progress"></div>
                 </div>
                 <ul>
-                    <li>Self-taught advanced knowledge</li>
-                    <li>Creation of this website</li>
+                    <?=$lang["skills"]["listJS"]?>
                 </ul>
             </div>
             <div class="dev_skill">
@@ -59,8 +56,7 @@
                     <div class="progress php"></div>
                 </div>
                 <ul>
-                    <li>Self-taught basics</li>
-                    <li>Creation of this website</li>
+                    <?=$lang["skills"]["listPHP"]?>
                 </ul>
             </div>
             <div class="dev_skill">
@@ -71,7 +67,7 @@
                     <div class="progress assembleur"></div>
                 </div>
                 <ul>
-                    <li>Basics in engineering school</li>
+                    <?=$lang["skills"]["listASM"]?>
                 </ul>
             </div>
             <div class="dev_skill">
@@ -82,76 +78,45 @@
                     <div class="progress VHDL"></div>
                 </div>
                 <ul>
-                    <li>Basics in engineering school</li>
+                    <?=$lang["skills"]["listVHDL"]?>
                 </ul>
             </div>
         </div>
     </article>
     <article id="tech">
-        <h2>Technical skills</h2>
+        <h2> <?=$lang["skills"]["title2"]?> </h2>
         <div>
-            <h3>IP infrastructure</h3>
+            <h3> <?=$lang["skills"]["title21"]?> </h3>
             <p>
-                My engineering school allowed me to learn solid technical basics concerning
-                <span class="smallText">networks</span> and <span class="smallText">telecommunications</span>.
-                I later developed and applied this knowledge through my mission as a pre-sales engineer.
+                <?=$lang["skills"]["text1"]?> 
             </p>
         </div>
         <div>
-            <h3>Safety & Physical Security</h3>
+            <h3> <?=$lang["skills"]["title22"]?> </h3>
             <p>
-                As a pre-sales engineer, I specialized in physical safety and security systems.
-                For several years, I designed <span class="smallText">access control</span> architectures,
-                <span class="smallText">intrusion detection </span> infrastructures and
-                <span class="smallText">surveillance</span> systems.
+                <?=$lang["skills"]["text2"]?> 
             </p>
         </div>
         <div>
-            <h3>Cybersecurity</h3>
+            <h3> <?=$lang["skills"]["title23"]?> </h3>
             <p>
-                I started learning cybersecurity with <span class="smallText"> the cryptography</span>
-                at the end of the engineering school. Then, I focused on this subject
-                while I was a pre-sales engineer. My professional career has given me
-                the opportunity to lead a <span class="smallText">LPM (French Military Programming Law)</span>
-                compliance project for one of the biggest french companies. <br><br>
-                
-                At the moment, I am still training myself at <span class="smallText">Ethical Hacking</span> and cybersecurity
-                thanks to the websites TryHackMe and RootMe.
+                <?=$lang["skills"]["text3"]?> 
             </p>
         </div>
         <div>
-            <h3>Embedded systems</h3>
+            <h3> <?=$lang["skills"]["title24"]?> </h3>
             <p>
-                I got an engineering background specialized in embedded systems.
-                My graduation project was to prototype an <span class="smallText">authentication wristband</span>
-                on a Raspberry PI.
+                <?=$lang["skills"]["text4"]?> 
             </p>
         </div>
     </article>
     <article id="commerce">
-        <h2>Business</h2>
-        <p>
-            Being a pre-sales engineer means also... being a business man!
-            <br> My missions were therefore diverse and varied:
-        </p>
-        <ul>
-            <li>Commercial prospection</li>
-            <li>Commercial strategy</li>
-            <li>Negotiation</li>
-            <li>Customer relations</li>
-        </ul>
+        <h2> <?=$lang["skills"]["title3"]?> </h2>
+        <?=$lang["skills"]["text5"]?> 
     </article>
     <article id="management">
-        <h2>Management</h2>
-        <p>
-            Obtaining new projects is good. Carrying them out is better!
-        </p>
-        <ul>
-            <li>Projects management</li>
-            <li>Management of the technical teams</li>
-            <li>Quality and safety monitoring</li>
-            <li>Contracts management</li>
-        </ul>
+        <h2> <?=$lang["skills"]["title4"]?> </h2>
+        <?=$lang["skills"]["text6"]?> 
     </article>
 </section>
 <?php $skills = ob_get_clean(); ?>

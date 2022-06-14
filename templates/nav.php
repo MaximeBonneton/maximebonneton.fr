@@ -9,15 +9,15 @@
         </div>
         <nav id="buttonContent">
             <ul>
-                <li><a href="/maximebonneton.fr/home">Home</a></li>        
-                <li><a href="/maximebonneton.fr/aboutMe">About Max</a></li>
-                <li><a href="/maximebonneton.fr/skills">Skills</a></li>
-                <li><a href="/maximebonneton.fr/project">Projects</a></li>           
+                <li><a href="/maximebonneton.fr/home"><?=$lang["nav"]["home"]?></a></li>        
+                <li><a href="/maximebonneton.fr/aboutMe"><?=$lang["nav"]["aboutMax"]?></a></li>
+                <li><a href="/maximebonneton.fr/skills"><?=$lang["nav"]["skills"]?></a></li>
+                <li><a href="/maximebonneton.fr/project"><?=$lang["nav"]["projects"]?></a></li>           
             </ul>
         </nav>
         <div id=network>
             <a href="https://fr.linkedin.com/in/maxime-bonneton-a42ab3a5" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/MaximeBonneton" target=_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/MaximeBonneton" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
     <script src="/maximebonneton.fr/src/js/navButton.js"></script>

@@ -1,16 +1,27 @@
 <?php
-//french lang
+//All the text in English
 
 $lang = [
+    'layout' => [
+        'langFR' =>'FR',
+        'langEN' =>'<strong>EN</strong>'
+        ],
+    'nav' => [
+        'home' => 'Home',
+        'aboutMax' => 'About Max',
+        'skills' => 'Skills',
+        'projects' => 'Projects'
+        ],
+
     'home' => [
-        'lang' =>'<a href="../fr/home.php">FR</a> | <a href="../en/home.php"><strong>EN</strong></a>',
         'title1' => 'Welcome',
         'text1' => 'Welcome on board, I am Max, I will be your guide
         during the exploration of the depths of this website.',
         'text2' => 'With a few words <span class="smallText">and lines of code,</span> you will discover a lot about me,
         my skills and my projects.',
-        'text3' => 'Feel free to navigate through the tabs on your left. <br> I wish you a pleasant visit.',
-    ],
+        'text3' => 'Feel free to navigate through the tabs on your left. <br> I wish you a pleasant visit.'
+        ],
+
     'aboutMe' => [
         'title1' => 'About Max',
         'study' => 'My professional career started after 5 years of study at <br>
@@ -48,19 +59,72 @@ $lang = [
         <ul>
             <li>Websites development: HTML, CSS and JavaScript</li>
             <li>Introduction to Ethical Hacking</li>
-        </ul>',
-    ],
+        </ul>'
+        ],
+
     'skills' => [
         'title1' => 'Programming languages',
-        'listeC' => '<li>Advanced courses in engineering school</li>
+        'listC' => '<li>Advanced courses in engineering school</li>
         <li>Graduation project</li>',
-        'listeNET'=> '<li>Basics in engineering school</li>',
-        'listeNET'=> '',
-        'listeNET'=> '',
-        'listeNET'=> '',
-        'listeNET'=> '',
-        'listeNET'=> '',
-        'listeNET'=> '',
-        'listeNET'=> '',
-    ]
+        'listNET'=> '<li>Basics in engineering school</li>',
+        'listHTML'=> '<li>Basics in engineering school</li>
+        <li>Self-taught advanced knowledge </li>
+        <li>Creation of this website</li>',
+        'listJS'=> '<li>Self-taught advanced knowledge</li>
+        <li>Creation of this website</li>',
+        'listPHP'=> '<li>Self-taught basics</li>
+        <li>Creation of this website</li>',
+        'listASM'=> '<li>Basics in engineering school</li>',
+        'listVHDL'=> '<li>Basics in engineering school</li>',
+        'title2'=> 'Technical skills',
+        'title21'=> 'IP infrastructure',
+        'text1' => 'My engineering school allowed me to learn solid technical basics concerning
+        <span class="smallText">networks</span> and <span class="smallText">telecommunications</span>.
+        I later developed and applied this knowledge through my mission as a pre-sales engineer.',
+        'title22'=> 'Safety & Physical Security',
+        'text2' => 'As a pre-sales engineer, I specialized in physical safety and security systems.
+        For several years, I designed <span class="smallText">access control</span> architectures,
+        <span class="smallText">intrusion detection </span> infrastructures and
+        <span class="smallText">surveillance</span> systems.',
+        'title23'=> 'Cybersecurity',
+        'text3' => 'I started learning cybersecurity with <span class="smallText"> the cryptography</span>
+        at the end of the engineering school. Then, I focused on this subject
+        while I was a pre-sales engineer. My professional career has given me
+        the opportunity to lead a <span class="smallText">LPM (French Military Programming Law)</span>
+        compliance project for one of the biggest french companies. <br><br>
+        At the moment, I am still training myself at <span class="smallText">Ethical Hacking</span> and cybersecurity
+        thanks to the websites TryHackMe and RootMe.',
+        'title24'=> 'Embedded systems',
+        'text4' => 'I got an engineering background specialized in embedded systems.
+        My graduation project was to prototype an <span class="smallText">authentication wristband</span>
+        on a Raspberry PI.',
+        'title3'=> 'Business',
+        'text5' => '<p>
+        Being a pre-sales engineer means also... being a business man!
+        <br> My missions were therefore diverse and varied:
+        </p>
+        <ul>
+            <li>Commercial prospection</li>
+            <li>Commercial strategy</li>
+            <li>Negotiation</li>
+            <li>Customer relations</li>
+        </ul>',
+        'title4'=> 'Management',
+        'text6' => '        <p>
+        Obtaining new projects is good. Carrying them out is better!
+        </p>
+        <ul>
+            <li>Projects management</li>
+            <li>Management of the technical teams</li>
+            <li>Quality and safety monitoring</li>
+            <li>Contracts management</li>
+        </ul>'
+        ],
+
+    'projects' => [
+        'title1' => 'My projects',
+        'coming' => 'Coming Soon'
+        ]
 ];
+
+?>
