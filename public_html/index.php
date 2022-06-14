@@ -55,11 +55,7 @@ switch($LANG){
                // If the path matches, display its contents and stop the router.
                return [$content,$stylePage];
             }
-            echo parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
          }
-
-         // This can only be reached if none of the routes matched the path.
-         echo 'Sorry! Page not found';
    }
 
 // Execute the router with our list of routes and we return the content & style

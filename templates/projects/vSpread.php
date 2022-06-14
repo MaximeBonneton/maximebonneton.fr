@@ -2,5 +2,5 @@
 <?php ob_start(); $stylePage = "vSpreadStyle.css";?>
 <section id="box">
 </section>
-<script src="../src/js/vspread.js"></script>
+<script src="/js/vspread.js"></script>
 <?php $vSpread = ob_get_clean(); ?>

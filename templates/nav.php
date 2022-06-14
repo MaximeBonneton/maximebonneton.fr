@@ -20,6 +20,6 @@
             <a href="https://github.com/MaximeBonneton" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
-    <script src="../src/js/navButton.js"></script>
+    <script src="/js/navButton.js"></script>
 </hearder>
 <?php $header = ob_get_clean(); ?>
