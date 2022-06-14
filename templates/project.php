@@ -4,12 +4,12 @@
     <h2><?=$lang["projects"]["title1"]?></h2>
     <article id="listProject">
         <a class="topic" href="home">
-            <img src="public_html/img/logo_exemple.png" alt="logo"/>
+            <img src="/public_html/img/logo_exemple.png" alt="logo"/>
             <span class="titleTopic">My Website</span>
             <p></p>
         </a>
         <a class="topic" href="project/vSpread">
-            <img src="public_html/img/vSpread.png" alt="logo"/>
+            <img src="/public_html/img/vSpread.png" alt="logo"/>
             <span class="titleTopic">VSpread</span>
             <p></p>
         </a>

@@ -37,7 +37,7 @@ switch($LANG){
 // Each path have a couple of $content & $stylePage
 //(I don't arrive to return the $stylePage with ob_get_clean)
    $routes = array(
-         '/maximebonneton.fr/'      => [$home,$homeStyle],
+         '/'      => [$home,$homeStyle],
          '/maximebonneton.fr/index' => [$home,$homeStyle],
          '/maximebonneton.fr/home' => [$home,$homeStyle],
          '/maximebonneton.fr/aboutMe' => [$aboutMe,$aboutMeStyle],
@@ -55,6 +55,7 @@ switch($LANG){
                // If the path matches, display its contents and stop the router.
                return [$content,$stylePage];
             }
+            echo parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
          }
 
          // This can only be reached if none of the routes matched the path.
