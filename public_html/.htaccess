@@ -3,4 +3,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ /maximebonneton.fr/public_html/index.php
 
-DirectoryIndex public_html/index.php
+DirectoryIndex index.php
