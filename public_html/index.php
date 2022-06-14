@@ -20,30 +20,32 @@ switch($LANG){
    require('../templates/home.php');
    require('../templates/aboutMe.php');	
    require('../templates/skills.php');	
-   require('../templates/project.php');	
+   require('../templates/project.php');
+   require('../templates/projects/vSpread.php');	
 ?>
 
 <?php
 // First, let's define our list of routes.
-// We could put this in a different file and include it in order to separate
-// logic and configuration.
+// Each path have a couple of $content & $stylePage
+//(I don't arrive to return the $stylePage with ob_get_clean)
    $routes = array(
-         '/maximebonneton.fr/'      => $home,
-         '/maximebonneton.fr/index' => $home,
-         '/maximebonneton.fr/home' => $home,
-         '/maximebonneton.fr/aboutMe' => $aboutMe,
-         '/maximebonneton.fr/skills' => $skills,
-         '/maximebonneton.fr/project' => $project,
+         '/maximebonneton.fr/'      => [$home,$homeStyle],
+         '/maximebonneton.fr/index' => [$home,$homeStyle],
+         '/maximebonneton.fr/home' => [$home,$homeStyle],
+         '/maximebonneton.fr/aboutMe' => [$aboutMe,$aboutMeStyle],
+         '/maximebonneton.fr/skills' => [$skills,$skillsStyle],
+         '/maximebonneton.fr/project' => [$project,$projectStyle],
+         '/maximebonneton.fr/project/vSpread' => [$vSpread,$vSpreadStyle],         
    );
 
 // This is our router.
    function router($routes)
    {
          // Iterate through a given list of routes.
-         foreach ($routes as $path => $content) {
+         foreach ($routes as $path => [$content,$stylePage]) {
             if ($path == $_SERVER['REQUEST_URI']) {
                // If the path matches, display its contents and stop the router.
-               return $content;
+               return [$content,$stylePage];
             }
          }
 
@@ -51,9 +53,8 @@ switch($LANG){
          echo 'Sorry! Page not found';
    }
 
-// Execute the router with our list of routes.
-$content = router($routes);
+// Execute the router with our list of routes and we return the content & style
+[$content,$stylePage] = router($routes);
 // Display the layout
 require("../templates/layout.php");
-   
    

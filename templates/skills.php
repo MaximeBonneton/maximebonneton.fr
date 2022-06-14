@@ -1,11 +1,8 @@
+<?php $skillsStyle = "skillsStyle.css"?>
 <?php ob_start(); ?>
 <section id="skills">
-    <div id="lang">
-        <a href="../fr/skills.php">FR</a> |
-        <a href="../en/skills.php"><strong>EN</strong></a>
-    </div>
     <article id="dev">
-        <h2>Programming languages</h2>
+        <h2> <?= $lang["skills"]["title1"]?> </h2>
         <div class="dev_skills_list">
             <div class="dev_skill">
                 <i class="fa-solid fa-c"></i>
@@ -15,8 +12,7 @@
                     <div class="progress c"></div>
                 </div>
                 <ul>
-                    <li>Advanced courses in engineering school</li>
-                    <li>Graduation project</li>
+
                 </ul>
             </div>
             <div class="dev_skill">
@@ -27,7 +23,7 @@
                     <div class="net progress"></div>
                 </div>
                 <ul>
-                    <li>Basics in engineering school</li>
+
                 </ul>
             </div>
             <div class="dev_skill">
