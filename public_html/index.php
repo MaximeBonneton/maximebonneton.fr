@@ -38,12 +38,12 @@ switch($LANG){
 //(I don't arrive to return the $stylePage with ob_get_clean)
    $routes = array(
          '/'      => [$home,$homeStyle],
-         '/maximebonneton.fr/index' => [$home,$homeStyle],
-         '/maximebonneton.fr/home' => [$home,$homeStyle],
-         '/maximebonneton.fr/aboutMe' => [$aboutMe,$aboutMeStyle],
-         '/maximebonneton.fr/skills' => [$skills,$skillsStyle],
-         '/maximebonneton.fr/project' => [$project,$projectStyle],
-         '/maximebonneton.fr/project/vSpread' => [$vSpread,$vSpreadStyle],         
+         '/index' => [$home,$homeStyle],
+         '/home' => [$home,$homeStyle],
+         '/aboutMe' => [$aboutMe,$aboutMeStyle],
+         '/skills' => [$skills,$skillsStyle],
+         '/project' => [$project,$projectStyle],
+         '/project/vSpread' => [$vSpread,$vSpreadStyle],         
    );
 
 // This is our router.
