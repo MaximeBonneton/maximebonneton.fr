@@ -3,6 +3,13 @@ Add font after the Roboto to the security (if a brower doesn't have the font)
 Changement au niveau des skills pour plus de lisibilité en screen smarthphone
 Ajouter image au topic dans la page projet
 
+Linux :
+Programmer une authentification RSA auto pour la connexion SSH
+Programmer une redirection des logs de connection du serveur sur la VM
+(Voir le cour sur Openclassroom)
 
 Project Idea :
 - recueil de recit
+- Faire un making of sur le site avec des credits
+ (genre merci les sisters et ma cherie)
+- 

@@ -20,6 +20,8 @@ switch($LANG){
 	default: 
 		require('lang/eng.php');		
 	}
+//With this code we return on sur browser's language each time we refresh the page... 
+//Next part of the projet : coding Session 
 ?>
 
 <?php
@@ -60,6 +62,6 @@ switch($LANG){
 
 // Execute the router with our list of routes and we return the content & style
 [$content,$stylePage] = router($routes);
-// Display the layout
+// Display the layout with the good content & style
 require("../templates/layout.php");
    
