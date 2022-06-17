@@ -1,16 +1,25 @@
-<?php
-// Select the good language
-if (empty($_GET['lang'])){
-   $LANG = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-}
-else if ($_GET['lang']=="fr") {
-   $LANG = "fr";
+<?php session_start(); ?>
+
+<?php // Select the good language
+
+//Do we have a $_GET['lang'] ?
+if ($_GET['lang']=="fr") {
+   $_SESSION['LANG'] = "fr";
 }
 else if ($_GET['lang']=="en") {
-   $LANG = "en";
+   $_SESSION['LANG'] = "en";
+}
+//If we don't let's take the default language
+else if(empty($_SESSION['LANG'])){
+   $_SESSION['LANG'] = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+}
+//If it's different than "fr" let's turn in English
+else if($_SESSION['LANG']!='fr'){
+   $_SESSION['LANG'] = "en";
 }
 
-switch($LANG){
+//So running the good language
+switch($_SESSION['LANG']){
  	case "en":
 		require('lang/eng.php');	
 	break;
@@ -19,9 +28,7 @@ switch($LANG){
 	break;	
 	default: 
 		require('lang/eng.php');		
-	}
-//With this code we return on sur browser's language each time we refresh the page... 
-//Next part of the projet : coding Session 
+}
 ?>
 
 <?php
