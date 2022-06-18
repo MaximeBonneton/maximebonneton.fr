@@ -3,11 +3,13 @@
 <?php // Select the good language
 
 //Do we have a $_GET['lang'] ?
-if ($_GET['lang']=="fr") {
-   $_SESSION['LANG'] = "fr";
-}
-else if ($_GET['lang']=="en") {
-   $_SESSION['LANG'] = "en";
+if(isset($_GET['lang'])){
+   if ($_GET['lang']=="fr") {
+      $_SESSION['LANG'] = "fr";
+   }
+   else if ($_GET['lang']=="en") {
+      $_SESSION['LANG'] = "en";
+   }
 }
 //If we don't let's take the default language
 else if(empty($_SESSION['LANG'])){
