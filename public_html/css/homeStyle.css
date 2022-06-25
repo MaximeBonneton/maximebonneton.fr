@@ -44,9 +44,6 @@
     display: grid;
     grid-template-rows: 30px 300px 1fr 30px;
     grid-template-columns: 10% 1fr 10% 1fr 10%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }
 
 .img_bckgrnd
