@@ -29,7 +29,7 @@
             <div class="dev_skill">
                 <i class="fa-brands fa-html5"></i>
                 <span>HTML, CSS</span>
-                <p>70%</p>
+                <p>80%</p>
                 <div class="bar">
                     <div class="progress html"></div>
                 </div>
@@ -39,8 +39,8 @@
             </div>
             <div class="dev_skill">
                 <i class="fa-brands fa-js-square"></i>
-                <span>JavaScript</span>
-                <p>20%</p>
+                <span>JavaScript, React</span>
+                <p>40%</p>
                 <div class="bar">
                     <div class="java progress"></div>
                 </div>
@@ -51,7 +51,7 @@
             <div class="dev_skill">
                 <i class="fa-brands fa-php"></i>
                 <span>PHP, SQL</span>
-                <p>40%</p>
+                <p>60%</p>
                 <div class="bar">
                     <div class="progress php"></div>
                 </div>

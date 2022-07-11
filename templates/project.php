@@ -13,6 +13,16 @@
             <span class="titleTopic">VSpread</span>
             <p></p>
         </a>
+        <a class="topic" href="">
+            <img src="" alt="Ecrito Logo"/>
+            <span class="titleTopic">Ecrito</span>
+            <p></p>
+        </a>
+        <a class="topic" href="">
+            <img src="" alt="Mots-ments Logo"/>
+            <span class="titleTopic">Mots-ments</span>
+            <p></p>
+        </a>
         <a class="topic">
             <span class="titleTopic">HackProgress</span>
             <p><?=$lang["projects"]["coming"]?></p>

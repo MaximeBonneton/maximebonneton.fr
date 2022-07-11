@@ -56,7 +56,7 @@ $lang = [
             Montées en compétences du moment :
         </p>
         <ul>
-            <li>Développement de sites Web : HTML, CSS et Javascript</li>
+            <li>Développement de sites Web : JavaScript, React, PHP & SQL</li>
             <li>Initiation au Ethical Hacking</li>
         </ul>"
         ],
@@ -68,11 +68,14 @@ $lang = [
         'listNET'=> "<li>Les bases en école d'ingénieur</li>",
         'listHTML'=> "<li>Les bases en école d'ingénieur</li>
         <li>Complément de cours en autodidacte</li>
-        <li>Création du site Web</li>",
+        <li>Projet Mon site web</li>
+        <li>Projet Mots-ments</li>",
         'listJS'=> "<li>Les bases en autodidacte</li>
-        <li>Création du site Web</li>",
+        <li>Projet VSpread</li>
+        <li>Projet Mots-ments</li>",
         'listPHP'=> "<li>Les bases en autodidacte</li>
-        <li>Créaton du site Web</li>",
+        <li>Projet Mon site web</li>
+        <li>Projet Ecrito</li>",
         'listASM'=> "<li>Les bases en école d'ingénieur</li>",
         'listVHDL'=> "<li>Les bases en école d'ingénieur</li>",
         'title2'=> 'Compétences techniques',

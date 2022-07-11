@@ -57,7 +57,7 @@ $lang = [
             My current upskillings:
         </p>
         <ul>
-            <li>Websites development: HTML, CSS and JavaScript</li>
+            <li>Websites development: JavaScript, React, PHP & SQL</li>
             <li>Introduction to Ethical Hacking</li>
         </ul>'
         ],
@@ -69,11 +69,14 @@ $lang = [
         'listNET'=> '<li>Basics in engineering school</li>',
         'listHTML'=> '<li>Basics in engineering school</li>
         <li>Self-taught advanced knowledge </li>
-        <li>Creation of this website</li>',
+        <li>My website project</li>
+        <li>Mots-ments website project</li>',
         'listJS'=> '<li>Self-taught advanced knowledge</li>
-        <li>Creation of this website</li>',
+        <li>VSpread project</li>
+        <li>Mots-ments website project</li>',
         'listPHP'=> '<li>Self-taught basics</li>
-        <li>Creation of this website</li>',
+        <li>My website project</li>
+        <li>Ecrito project</li>',
         'listASM'=> '<li>Basics in engineering school</li>',
         'listVHDL'=> '<li>Basics in engineering school</li>',
         'title2'=> 'Technical skills',
